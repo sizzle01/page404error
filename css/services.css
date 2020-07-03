@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--primaryFont: 'Bebas Neue', cursive;
+--secondaryFont: 'Manrope', sans-serif;
+--primary-color: #FF4301;
+--secondary-color: #0D0D0D;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+p {
+    font-family: var(--primaryFont);
+}
+
+
+.jumbotron {
+    background: url(../../images/servicesbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 720px;
+    margin: 0;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.jumbotron h1 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 115px;
+    color: #fff;
+    z-index: 10;
+}
+
+.jumbotron p {
+    z-index: 10;
+}
+
+.jumbotron .btn {
+    background: var(--primary-color);
+    color: #fff;
+    width: 160px;
+    height: 54px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.jumbotron .lead a {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.showcase {
+    background: #e5e5e5;
+    height: 268px;
+}
+
+.showcase h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
+    color: #000;
+}
+
+#wrapper {
+    padding-top: 2em; 
+    padding-bottom: 15em;
+}
+
+.card {
+    width: 344px;
+    height: 593px;
+    margin: 1em 2em;
+    padding: 1em;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+}
+
+.title {
+    font-family: var(--primaryFont) !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+    height: 194px;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description p{
+    font-family: var(--secondaryFont);
+    font-size: 18px;
+    line-height: 31px;
+    color: #000000;
+    text-align: justify;
+}
+
+.card .btn {
+    background: var(--primary-color);
+    color: #fff;
+    width: 183px;
+    height: 60px;
+    margin: auto;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.call-to-action {
+    background: var(--primary-color);
+    position: relative;
+}
+
+.call-to-action::after {
+    content: "";
+    background: url(../../images/calltoactionbg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.call-to-action h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 86px;
+    color: #fff;
+}
+
+.call-to-action .btn {
+    background: #fff;
+    color: var(--primary-color);
+    width: 183px;
+    height: 60px;
+    margin: 0;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.bg_img1 {
+    position: absolute;
+    top: 860px;
+    left: 3em;
+    z-index: 1;
+}
+
+.bg_img2 {
+    position: absolute;
+    top: 2050px;
+    left: 3em;
+    z-index: 1;
+}
+
+/* Responsiveness  Mobile; tablet; and large screens;*/
+
+@media only screen and (max-width: 480px) {
+
+    .jumbotron {
+        height: 256px;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .jumbotron .btn {
+        width: 131.11px;
+        height: 40px;
+    }
+
+    .jumbotron .lead a {
+        font-size: 24px;
+    }
+
+    .showcase {
+        height: 137px;
+    }
+
+    .showcase h2 {
+        font-size: 36px;
+        line-height: 43px
+    }
+
+    .card {
+        width: 287.23px;
+        height: 495.14px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .description p {
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .card .btn {
+        width: 152.8px;
+        height: 50.1px;
+        font-size: 25px;
+    }
+
+    .call-to-action::after {
+        background: url(../../images/calltoactionbg-mobile.svg);
+        background-size: cover;;
+    }
+
+    .call-to-action h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .call-to-action .btn {
+        width: 140px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    #wrapper { 
+        padding-bottom: 4em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 845px) {
+    .jumbotron {
+        height: 520px;
+    }
+
+    .call-to-action::after {
+        background: url(../../images/calltoactionbg-mobile.svg);
+        background-size: cover;;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .showcase {
+        height: 240px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #wrapper { 
+        padding-bottom: 4em;
+    }
+    
+    .bg_img1, .bg_img2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .bg_img1, .bg_img2 {
+        display: none;
+    }
+
+    #wrapper { 
+        padding-bottom: 4em;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .bg_img1, .bg_img2 {
+        left: 0;
+    }
+}

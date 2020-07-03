@@ -1,0 +1,79 @@
+@font-face{
+    font-family: 'bebas';
+    src: url('../assets/fonts/bebas-neue/BebasNeue-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'manrope';
+    src: url('../assets/fonts/manrope/Manrope-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'manrope-bold';
+    src: url('../assets/fonts/manrope/Manrope-Bold.ttf');
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    text-size-adjust: inherit;
+    font-size-adjust: inherit;
+}
+
+h1,h2,h3,h4{
+    font-family: 'bebas', sans-serif !important;
+}
+
+h5,h6,p{
+    font-family: 'manrope', sans-serif !important;
+}
+
+label{
+    font-family: 'manrope-bold', sans-serif !important;
+    font-size: .85em;
+}
+
+input,select{
+    width: 85%;
+    height: 50px;
+    border: 1px solid #c9c8c9;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    font-family: 'manrope';
+    font-size: .75em;
+    padding: 0 10px !important;    
+}
+
+input[type="radio"]{
+    width: 20px !important;
+}
+
+button{
+    width: max-content;
+    padding: 10px 20px;
+    font-family: 'bebas';
+    font-size: 30px;
+    border: 0;
+    color: #fff;
+    background: #FF4301;
+    cursor: pointer;
+}
+.containe{
+    width: 80%;
+}
+@media only screen and (min-width:768px){
+    input,select{
+        width: 200px;
+        height: 35px;
+    }    
+}
+@media only screen and (min-width:1024px){
+    .containe{
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .containe{
+        width: 1150px;
+    }
+}
